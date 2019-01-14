@@ -32,6 +32,27 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/fonts/GaramondPremrPro-Capt.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/fonts/GaramondPremrPro-Capt.otf",
+		"oF": 0
+		},
+	"/fonts/GaramondPremrPro-ItCapt.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/fonts/GaramondPremrPro-ItCapt.otf",
+		"oF": 0
+		},
+	"/fonts/RobinsonsGothic2-Regular.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/fonts/RobinsonsGothic2-Regular.otf",
+		"oF": 0
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,

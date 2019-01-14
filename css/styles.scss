@@ -13,7 +13,7 @@
     -ms-text-size-adjust: 100%; /* 2 */
     -webkit-text-size-adjust: 100%; /* 2 */
      background-color: inherit;
-     // font-family: 'Neue Haas Grotesk 65', Fallback, sans-serif;
+     font-family: 'Garamond Premr Pro', Fallback, sans-serif;
      font-weight: 100;
      font-size: 34px;
   }
@@ -39,7 +39,7 @@
     min-height: 100%;
     overflow-x: hidden;
     display: block;
-    // background: #FFFF00;
+    background: #0c3520;
     *  {
       // display: block;
       font-weight: 100;
@@ -576,6 +576,18 @@
     display: none;
   }
 
+  /* Fonts
+     ========================================================================== */
+
+     @font-face {
+       font-family: 'Garamond Premr Pro';
+       src: url('../fonts/GaramondPremrPro-Capt.otf');
+     }
+
+     @font-face {
+       font-family: 'Robinsons Gothic Regular';
+       src: url('../fonts/RobinsonsGothic2-Regular.otf');
+     }
 
   /* General
      ========================================================================== */
@@ -599,3 +611,128 @@
      small, footer li  {
        font-size: 0.353rem;
      }
+
+    #wrapper {
+      background-color: #ffffff;
+    }
+
+     .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .column {
+        flex-basis: 100%;
+      }
+      @media screen and (min-width: 800px) {
+        .column {
+          flex: 1;
+        }
+      }
+      @media screen and (min-width: 800px) {
+        ._15 {
+          flex: 1.5;
+        }
+        ._20 {
+          flex: 2;
+        }
+        ._25 {
+          flex: 2.5;
+        }
+        ._30 {
+          flex: 3.3;
+        }
+        ._35 {
+          flex: 3.5;
+        }
+        ._37 {
+          flex: 3.75;
+        }
+        ._40 {
+          flex: 4;
+        }
+        ._55 {
+          flex: 5.5;
+        }
+        ._65 {
+          flex: 6.5;
+        }
+        ._70 {
+          flex: 7;
+        }
+        ._20 {
+          flex: 2;
+        }
+        ._75 {
+          flex: 7.5;
+        }
+      }
+
+      .inner-width {
+        width: calc(100% - 100px);
+      }
+
+      .row.center {
+        align-items: center;
+        text-align: center;
+      }
+   /* Header and Navigation
+      ========================================================================== */
+      header {
+        font-size: 0.471rem;
+        padding: 2em 0;
+        border-bottom: 1px solid #000000;
+      }
+      nav ul {
+        font-family: 'Garamond Premr Pro';
+        display: flex;
+        letter-spacing: 2px;
+        * {
+          margin: 0;
+        }
+        .internal-links {
+          margin-right: 12px;
+        }
+        .social-links {
+          margin-left: 12px;
+        }
+      }
+      #home-button {
+        margin-left: auto;
+        margin-right: auto
+      }
+
+
+      /* Home
+         ========================================================================== */
+
+      section.blockquote {
+        padding: 250px 0;
+        max-width: 800px;
+      }
+
+      section.square {
+        padding: 250px 0;
+        max-width: 600px;
+
+        h3 {
+          overflow: hidden;
+          text-align: justify;
+          -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+          hyphens: auto;
+          -webkit-shape-inside: polygon(0px 0px, 0 300px, 300px 300px);
+        }
+      }
+
+      #logo {
+        min-height: calc(100vh - 2.44rem);
+        background-color: #0c3520;
+
+        h1 {
+          color: #ffffff;
+          font-family: 'Robinsons Gothic Regular';
+          font-size: 3.117rem;
+          letter-spacing: 0.206rem;
+        }
+      }
