@@ -16,6 +16,13 @@
 		"oAP": "/careers.html",
 		"oF": 0
 		},
+	"/contact.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/contact.html",
+		"oF": 0
+		},
 	"/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -247,6 +254,27 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/Robinsons_Map.jpg": {
+		"ft": 16384,
+		"iS": 570798,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/Robinsons_Map.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/SVG/lighthouse-logo-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/SVG/lighthouse-logo-white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/images/SVG/lighthouse-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -294,6 +322,13 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/shop.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/shop.html",
+		"oF": 0
 		}
 	},
 "hooks": [

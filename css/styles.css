@@ -550,7 +550,8 @@ small, footer li, .small {
   overflow: hidden; }
 
 main {
-  min-height: calc(100vh - 141px - 83px); }
+  min-height: calc(100vh - 141px - 83px);
+  padding-bottom: 100px; }
 
 .row {
   display: flex;
@@ -611,6 +612,9 @@ main {
 
 #intro .row {
   max-width: 733px; }
+
+#intro h3 {
+  padding-bottom: 2em; }
 
 /* Product Grid
          ========================================================================== */
@@ -678,10 +682,15 @@ nav ul {
 
 #home-button {
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  border: none !important;
+  opacity: 1 !important; }
 
 /* Footer
          ========================================================================== */
+footer.shop #logos {
+  border-bottom: 1px solid #ffffff; }
+
 footer #logos {
   padding-bottom: 27px;
   border-bottom: 1px solid #000000; }
@@ -771,3 +780,30 @@ section h3 {
 
 /* Careers
          ========================================================================== */
+.careers {
+  max-width: 733px; }
+  .careers .job {
+    border-top: 1px solid #000000;
+    padding: 0.5em 0 1em 0; }
+    .careers .job .description, .careers .job .title {
+      padding-bottom: 1em; }
+    .careers .job .title {
+      padding-right: 1.3em; }
+
+/* Contact
+         ========================================================================== */
+.contact #contactinfo ul {
+  flex-direction: column; }
+  .contact #contactinfo ul li {
+    padding-bottom: 0.5em; }
+  .contact #contactinfo ul .title {
+    text-transform: uppercase; }
+
+/* Shop
+            ========================================================================== */
+.shop {
+  background-color: #000000;
+  color: #ffffff; }
+  .shop * {
+    background-color: #000000;
+    color: #ffffff; }

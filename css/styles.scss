@@ -627,6 +627,7 @@
 
     main {
       min-height: calc(100vh - 141px - 83px);
+      padding-bottom: 100px;
       @media screen and (max-width: 800px) {
 
       }
@@ -710,6 +711,9 @@
         }
         .row {
           max-width: 733px;
+        }
+        h3 {
+          padding-bottom: 2em;
         }
       }
 
@@ -804,7 +808,9 @@
       }
       #home-button {
         margin-left: auto;
-        margin-right: auto
+        margin-right: auto;
+        border: none !important;
+        opacity: 1 !important;
       }
 
 
@@ -812,6 +818,12 @@
          ========================================================================== */
 
         footer {
+
+          &.shop {
+            #logos {
+              border-bottom: 1px solid #ffffff;
+            }
+          }
           #logos {
             padding-bottom: 27px;
             border-bottom: 1px solid #000000;
@@ -947,3 +959,49 @@
 
       /* Careers
          ========================================================================== */
+
+
+      .careers {
+          max-width: 733px;
+
+        .job {
+          border-top: 1px solid #000000;
+          padding: 0.5em 0 1em 0;
+
+          .description, .title {
+            padding-bottom: 1em;
+          }
+          .title {
+            padding-right: 1.3em;
+          }
+        }
+      }
+
+      /* Contact
+         ========================================================================== */
+
+         .contact {
+           #contactinfo {
+             ul {
+               flex-direction: column;
+                li {
+                  padding-bottom: 0.5em;
+                }
+               .title {
+                 text-transform: uppercase;
+               }
+             }
+           }
+         }
+
+         /* Shop
+            ========================================================================== */
+
+        .shop {
+          background-color: #000000;
+          color: #ffffff;
+           * {
+             background-color: #000000;
+             color: #ffffff;
+           }
+        }
