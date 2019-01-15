@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/careers.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/careers.html",
+		"oF": 0
+		},
 	"/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
