@@ -543,7 +543,11 @@ small, footer li, .small {
   font-size: 0.353rem; }
 
 #wrapper {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  overflow: hidden; }
+
+main {
+  min-height: calc(100vh - 141px - 83px); }
 
 .row {
   display: flex;
@@ -664,6 +668,43 @@ nav ul {
   margin-left: auto;
   margin-right: auto; }
 
+/* Footer
+         ========================================================================== */
+footer #logos {
+  padding-bottom: 27px;
+  border-bottom: 1px solid #000000; }
+  footer #logos .column {
+    max-width: 165px;
+    letter-spacing: 0.106rem; }
+    footer #logos .column#thistle {
+      margin-right: 0; }
+    footer #logos .column#lighthouse {
+      margin-left: 0; }
+  footer #logos img {
+    max-width: 57px;
+    padding-bottom: 15px; }
+  footer #logos .small {
+    font-size: 0.265rem;
+    font-family: 'Robinsons Gothic Regular'; }
+
+footer #contentinfo {
+  padding: 27px 0 185px 0; }
+  footer #contentinfo ul {
+    justify-content: center; }
+    footer #contentinfo ul li {
+      flex: 0 0 auto; }
+      footer #contentinfo ul li:nth-child(1) {
+        margin-right: 12px; }
+      footer #contentinfo ul li:nth-child(2) {
+        margin: 0; }
+      footer #contentinfo ul li:nth-child(3) {
+        margin-left: 12px; }
+      @media screen and (max-width: 800px) {
+        footer #contentinfo ul li:nth-child(1), footer #contentinfo ul li:nth-child(2), footer #contentinfo ul li:nth-child(3) {
+          margin: auto; } }
+  footer #contentinfo span {
+    text-transform: uppercase; }
+
 /* Home
          ========================================================================== */
 section h2 {
@@ -698,6 +739,9 @@ section h3 {
     font-family: 'Robinsons Gothic Regular';
     font-size: 3.117rem;
     letter-spacing: 0.206rem; }
+
+#tagline h3 {
+  text-align: center; }
 
 #products,
 #newsletterSignUp,

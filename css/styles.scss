@@ -619,8 +619,15 @@
 
     #wrapper {
       background-color: #ffffff;
+      overflow: hidden;
     }
 
+    main {
+      min-height: calc(100vh - 141px - 83px);
+      @media screen and (max-width: 800px) {
+
+      }
+    }
      .row {
         display: flex;
         flex-direction: row;
@@ -689,7 +696,6 @@
       .italic {
         font-family: 'Garamond Premr Italic';
       }
-
       /* Product Grid
          ========================================================================== */
       .product-grid {
@@ -785,6 +791,67 @@
       }
 
 
+      /* Footer
+         ========================================================================== */
+
+        footer {
+          #logos {
+            padding-bottom: 27px;
+            border-bottom: 1px solid #000000;
+            .column {
+              max-width: 165px;
+              letter-spacing: 0.106rem;
+
+              &#thistle{
+                margin-right: 0;
+              }
+              &#lighthouse {
+                margin-left: 0;
+              }
+            }
+            img {
+              max-width: 57px;
+              padding-bottom: 15px;
+            }
+            .small {
+              font-size: 0.265rem;
+              font-family: 'Robinsons Gothic Regular';
+            }
+          }
+
+          #contentinfo {
+            padding: 27px 0 185px 0;
+
+            ul {
+              justify-content: center;
+
+              li {
+                flex: 0 0 auto;
+                &:nth-child(1) {
+                  margin-right: 12px;
+                }
+                &:nth-child(2) {
+                  margin: 0;
+                }
+                &:nth-child(3) {
+                  margin-left: 12px;;
+                }
+                @media screen and (max-width: 800px) {
+                  &:nth-child(1),
+                  &:nth-child(2),
+                  &:nth-child(3) {
+                    margin: auto;
+                  }
+                }
+              }
+            }
+            span {
+              text-transform: uppercase;
+            }
+          }
+        }
+
+
       /* Home
          ========================================================================== */
       section {
@@ -833,6 +900,11 @@
         }
       }
 
+      #tagline {
+        h3 {
+          text-align: center;
+        }
+      }
       #products,
       #newsletterSignUp,
       #pressNews {

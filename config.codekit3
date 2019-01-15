@@ -108,6 +108,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/lighthouse-logo.png": {
+		"ft": 32768,
+		"iS": 2509,
+		"oA": 0,
+		"oAP": "/images/lighthouse-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/lighthouse.jpg": {
 		"ft": 16384,
 		"iS": 3373834,
@@ -139,6 +150,37 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/images/SVG/lighthouse-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/SVG/lighthouse-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/SVG/thistle-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/SVG/thistle-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/thistle.png": {
+		"ft": 32768,
+		"iS": 2878,
+		"oA": 0,
+		"oAP": "/images/thistle.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/index.html": {
