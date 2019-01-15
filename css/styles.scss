@@ -82,13 +82,15 @@
 
   nav [aria-current=page] {
   	color: #000;
-  	border-bottom: .01em solid #000000;
+    opacity: 0.4;
   }
 
   nav a:hover,
   nav a:focus {
   	color: #000000;
   	background-color: #fff;
+    opacity: 0.4;
+    border: none;
   }
 
   a {
@@ -697,6 +699,20 @@
       .italic {
         font-family: 'Garamond Premr Italic';
       }
+
+      #intro {
+
+        h1, h3 {
+            text-align: center;
+        }
+        h1 {
+          padding: 2.735em 0;
+        }
+        .row {
+          max-width: 733px;
+        }
+      }
+
       /* Product Grid
          ========================================================================== */
       .product-grid {
