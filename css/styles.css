@@ -51,12 +51,12 @@ body {
   body:focus {
     outline-color: rgba(0, 0, 0, 0) !important; }
   body ::selection {
-    background: #000000;
+    background: #0c5324;
     /* WebKit/Blink Browsers */
     color: #ffffff;
     opacity: 1; }
   body ::-moz-selection {
-    background: #000000;
+    background: #0c5324;
     color: #ffffff;
     opacity: 1; }
 
@@ -514,6 +514,10 @@ input[type=number]::-webkit-outer-spin-button {
   src: url("../fonts/GaramondPremrPro-Capt.otf"); }
 
 @font-face {
+  font-family: 'Garamond Premr Italic';
+  src: url("../fonts/GaramondPremrPro-ItCapt.otf"); }
+
+@font-face {
   font-family: 'Robinsons Gothic Regular';
   src: url("../fonts/RobinsonsGothic2-Regular.otf"); }
 
@@ -535,7 +539,7 @@ nav li {
   font-size: 0.471rem;
   text-transform: uppercase; }
 
-small, footer li {
+small, footer li, .small {
   font-size: 0.353rem; }
 
 #wrapper {
@@ -586,6 +590,58 @@ small, footer li {
   align-items: center;
   text-align: center; }
 
+.img-padding img {
+  border: 2rem solid #ffffff; }
+
+.italic {
+  font-family: 'Garamond Premr Italic'; }
+
+/* Product Grid
+         ========================================================================== */
+.product-grid h2 {
+  text-align: center; }
+
+.product-grid .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr)); }
+  @media only screen and (max-width: 800px) {
+    .product-grid .row {
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); } }
+  .product-grid .row .column {
+    padding: 0.25em;
+    padding-top: 50px; }
+    .product-grid .row .column .title {
+      text-align: center;
+      padding-bottom: 1em; }
+    .product-grid .row .column .description {
+      padding-bottom: 1em; }
+    .product-grid .row .column .small {
+      font-family: 'Robinsons Gothic Regular';
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.1em; }
+
+/* Blog Grid
+         ========================================================================== */
+.blog-grid h2 {
+  text-align: center; }
+
+.blog-grid .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr)); }
+  @media only screen and (max-width: 800px) {
+    .blog-grid .row {
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); } }
+  .blog-grid .row .column {
+    padding: 0.25em;
+    padding-top: 50px; }
+    .blog-grid .row .column .title {
+      text-transform: uppercase;
+      text-align: center; }
+    .blog-grid .row .column .date {
+      text-align: center;
+      padding-bottom: 1em; }
+
 /* Header and Navigation
       ========================================================================== */
 header {
@@ -610,20 +666,29 @@ nav ul {
 
 /* Home
          ========================================================================== */
+section h2 {
+  text-align: center; }
+
 section.blockquote {
   padding: 250px 0;
   max-width: 800px; }
+  section.blockquote h2 {
+    padding-bottom: 1em; }
 
-section.square {
+section .square {
   padding: 250px 0;
   max-width: 600px; }
-  section.square h3 {
-    overflow: hidden;
-    text-align: justify;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    -webkit-shape-inside: polygon(0px 0px, 0 300px, 300px 300px); }
+
+section h2 {
+  padding-bottom: 1em; }
+
+section h3 {
+  overflow: hidden;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  -webkit-shape-inside: polygon(0px 0px, 0 300px, 300px 300px); }
 
 #logo {
   min-height: calc(100vh - 2.44rem);
@@ -633,3 +698,17 @@ section.square {
     font-family: 'Robinsons Gothic Regular';
     font-size: 3.117rem;
     letter-spacing: 0.206rem; }
+
+#products,
+#newsletterSignUp,
+#pressNews {
+  padding: 80px 0; }
+
+#about, #region {
+  background-color: #0c3520;
+  color: #ffffff; }
+
+#newsletterSignUp {
+  border-top: 1px solid #000000; }
+  #newsletterSignUp p {
+    text-align: center; }

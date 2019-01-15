@@ -53,6 +53,94 @@
 		"oAP": "/fonts/RobinsonsGothic2-Regular.otf",
 		"oF": 0
 		},
+	"/images/barn.jpg": {
+		"ft": 16384,
+		"iS": 2578478,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/barn.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/black-bags.jpg": {
+		"ft": 16384,
+		"iS": 1628760,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/black-bags.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/black-glass-jar.jpeg": {
+		"ft": 16384,
+		"iS": 6585,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/black-glass-jar.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/grass-mountain.jpg": {
+		"ft": 16384,
+		"iS": 620012,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/grass-mountain.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/jay.jpg": {
+		"ft": 16384,
+		"iS": 8525492,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/jay.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/lighthouse.jpg": {
+		"ft": 16384,
+		"iS": 3373834,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/lighthouse.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/man-in-bush.jpg": {
+		"ft": 16384,
+		"iS": 1198711,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/man-in-bush.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/river.jpg": {
+		"ft": 16384,
+		"iS": 5197744,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/river.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
