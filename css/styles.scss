@@ -1087,25 +1087,6 @@
 
       }
 
-      /* Careers
-         ========================================================================== */
-
-
-      .careers {
-          max-width: 733px;
-
-        .job {
-          border-top: 1px solid #000000;
-          padding: 0.5em 0 1em 0;
-
-          .description, .title {
-            padding-bottom: 1em;
-          }
-          .title {
-            padding-right: 1.3em;
-          }
-        }
-      }
 
       /* Contact
          ========================================================================== */
@@ -1137,6 +1118,28 @@
              color: #ffffff;
            }
         }
+
+
+        /* Shop
+           ========================================================================== */
+
+
+           .terms, .privacy, .careers {
+             max-width: 733px;
+
+             .row {
+               border-top: 1px solid #000000;
+               padding: 0.5em 0 1em 0;
+
+               p {
+                 padding-bottom: 1em;
+               }
+               .title {
+                 padding-right: 1.3em;
+               }
+             }
+           }
+
 
         /* Animations
            ========================================================================== */

@@ -886,18 +886,6 @@ section h3 {
   #newsletterSignUp p {
     text-align: center; }
 
-/* Careers
-         ========================================================================== */
-.careers {
-  max-width: 733px; }
-  .careers .job {
-    border-top: 1px solid #000000;
-    padding: 0.5em 0 1em 0; }
-    .careers .job .description, .careers .job .title {
-      padding-bottom: 1em; }
-    .careers .job .title {
-      padding-right: 1.3em; }
-
 /* Contact
          ========================================================================== */
 .contact #contactinfo ul {
@@ -917,6 +905,18 @@ section h3 {
   .shop * {
     background-color: #000000;
     color: #ffffff; }
+
+/* Shop
+           ========================================================================== */
+.terms, .privacy, .careers {
+  max-width: 733px; }
+  .terms .row, .privacy .row, .careers .row {
+    border-top: 1px solid #000000;
+    padding: 0.5em 0 1em 0; }
+    .terms .row p, .privacy .row p, .careers .row p {
+      padding-bottom: 1em; }
+    .terms .row .title, .privacy .row .title, .careers .row .title {
+      padding-right: 1.3em; }
 
 /* Animations
            ========================================================================== */
