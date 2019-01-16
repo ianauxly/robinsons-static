@@ -542,7 +542,7 @@ p {
   font-size: 0.412rem; }
 
 nav li {
-  font-size: 0.471rem;
+  font-size: 0.412rem;
   text-transform: uppercase; }
 
 small, footer li, .small {
@@ -555,7 +555,7 @@ small, footer li, .small {
 main {
   min-height: calc(100vh - 141px);
   padding-bottom: 100px;
-  padding-top: 83px; }
+  padding-top: 81px; }
 
 .row {
   display: flex;
@@ -679,7 +679,7 @@ header {
 
 nav ul {
   font-family: 'Garamond Premr Pro';
-  letter-spacing: 2px;
+  letter-spacing: 0.12em;
   position: relative; }
   nav ul * {
     cursor: pointer; }
@@ -739,6 +739,7 @@ nav ul {
     #overlay form .label-wrap, #overlay form .title {
       margin-bottom: 2em; }
     #overlay form .title {
+      letter-spacing: 0.12em;
       text-transform: uppercase; }
     #overlay form input {
       margin-bottom: 0.5em;
@@ -752,7 +753,11 @@ nav ul {
       padding: 1.3125em;
       text-transform: uppercase;
       cursor: pointer;
-      font-size: 0.412rem; }
+      font-size: 0.412rem;
+      letter-spacing: 0.12em; }
+      #overlay form [type="submit"]:hover, #overlay form [type="submit"]:focus {
+        background: #000000;
+        color: #ffffff; }
     #overlay form .description {
       text-align: center;
       width: 100%; }

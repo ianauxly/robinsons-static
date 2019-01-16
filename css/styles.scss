@@ -618,7 +618,7 @@
        font-size: 0.412rem;
      }
      nav li {
-       font-size: 0.471rem;
+        font-size: 0.412rem;
        text-transform: uppercase;
      }
      small, footer li, .small  {
@@ -633,7 +633,7 @@
     main {
       min-height: calc(100vh - 141px);
       padding-bottom: 100px;
-      padding-top: 83px;
+      padding-top: 81px;
       @media screen and (max-width: 800px) {
 
       }
@@ -804,7 +804,7 @@
       }
       nav ul {
         font-family: 'Garamond Premr Pro';
-        letter-spacing: 2px;
+        letter-spacing: 0.12em;
         position: relative;
         * {
           // margin: 0;
@@ -873,6 +873,7 @@
                   margin-bottom: 2em;
                 }
                 .title {
+                  letter-spacing: 0.12em;
                    text-transform: uppercase;
                 }
                 input {
@@ -889,6 +890,13 @@
                  text-transform: uppercase;
                  cursor: pointer;
                  font-size: 0.412rem;
+                 letter-spacing: 0.12em;
+
+                 &:hover,
+                 &:focus {
+                   background: #000000;
+                   color: #ffffff;
+                 }
                }
                .description {
                  text-align: center;
