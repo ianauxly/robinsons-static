@@ -61,6 +61,8 @@ body {
     background: #0c5324;
     color: #ffffff;
     opacity: 1; }
+  body.scroll-pause {
+    overflow-y: hidden; }
 
 /**
    * Add the correct display in IE 9-.
@@ -114,7 +116,7 @@ main {
    * Add the correct margin in IE 8.
    */
 figure {
-  margin: 1em 1vw; }
+  margin-bottom: 1em; }
 
 /**
    * 1. Add the correct box sizing in Firefox.
@@ -313,7 +315,7 @@ button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   -webkit-appearance: button;
   /* 2 */
   width: fit-content; }
@@ -465,7 +467,7 @@ input {
   outline: none;
   box-shadow: none;
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 1px solid #000000;
   border-radius: 0;
   width: 100%; }
   input::placeholder {
@@ -538,6 +540,7 @@ h2, h3 {
   font-size: 0.647rem; }
 
 h2 {
+  font-size: 1rem;
   text-transform: lowercase;
   font-variant-caps: small-caps;
   font-variant: small-caps; }
@@ -627,6 +630,8 @@ main {
   padding-bottom: 2em; }
 
 .small-caps {
+  text-transform: lowercase;
+  font-variant-caps: small-caps;
   font-variant: small-caps; }
 
 /* Product Grid
@@ -650,9 +655,7 @@ main {
       padding-bottom: 1em; }
     .product-grid .row .column .small {
       font-family: 'Robinsons Gothic Regular';
-      text-transform: lowercase;
-      font-variant-caps: small-caps;
-      font-variant: small-caps;
+      text-transform: uppercase;
       text-align: center;
       letter-spacing: 0.1em; }
 
@@ -668,7 +671,7 @@ main {
     .blog-grid .row {
       grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); } }
   .blog-grid .row .column {
-    padding: 0.25em;
+    padding: 1em;
     padding-top: 50px; }
     .blog-grid .row .column .title {
       text-transform: lowercase;
@@ -754,6 +757,7 @@ nav ul {
     #overlay form .label-wrap, #overlay form .title {
       margin-bottom: 2em; }
     #overlay form .title {
+      font-size: 0.471rem;
       letter-spacing: 0.12em;
       text-transform: lowercase;
       font-variant-caps: small-caps;
@@ -767,12 +771,11 @@ nav ul {
       font-family: 'Garamond Premr Pro';
       width: 100%;
       margin-bottom: 5em;
-      padding: 1.3125em;
+      padding: 1.2125em;
       text-transform: lowercase;
       font-variant-caps: small-caps;
       font-variant: small-caps;
       cursor: pointer;
-      font-size: 0.412rem;
       letter-spacing: 0.12em; }
       #overlay form [type="submit"]:hover, #overlay form [type="submit"]:focus {
         background: #000000;
@@ -829,6 +832,10 @@ footer #contentinfo {
 
 /* Home
          ========================================================================== */
+.home h3.small-caps {
+  text-align: center;
+  padding-bottom: 1em; }
+
 section h2 {
   text-align: center; }
 
