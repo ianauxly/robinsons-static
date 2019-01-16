@@ -530,20 +530,26 @@ input[type=number]::-webkit-outer-spin-button {
      ========================================================================== */
 h1 {
   font-size: 1rem;
-  text-transform: uppercase; }
+  text-transform: lowercase;
+  font-variant-caps: small-caps;
+  font-variant: small-caps; }
 
 h2, h3 {
   font-size: 0.647rem; }
 
 h2 {
-  text-transform: uppercase; }
+  text-transform: lowercase;
+  font-variant-caps: small-caps;
+  font-variant: small-caps; }
 
 p {
   font-size: 0.412rem; }
 
 nav li {
-  font-size: 0.412rem;
-  text-transform: uppercase; }
+  font-size: 0.471rem;
+  text-transform: lowercase;
+  font-variant-caps: small-caps;
+  font-variant: small-caps; }
 
 small, footer li, .small {
   font-size: 0.353rem; }
@@ -620,6 +626,9 @@ main {
 #intro h3 {
   padding-bottom: 2em; }
 
+.small-caps {
+  font-variant: small-caps; }
+
 /* Product Grid
          ========================================================================== */
 .product-grid h2 {
@@ -641,7 +650,9 @@ main {
       padding-bottom: 1em; }
     .product-grid .row .column .small {
       font-family: 'Robinsons Gothic Regular';
-      text-transform: uppercase;
+      text-transform: lowercase;
+      font-variant-caps: small-caps;
+      font-variant: small-caps;
       text-align: center;
       letter-spacing: 0.1em; }
 
@@ -660,7 +671,9 @@ main {
     padding: 0.25em;
     padding-top: 50px; }
     .blog-grid .row .column .title {
-      text-transform: uppercase;
+      text-transform: lowercase;
+      font-variant-caps: small-caps;
+      font-variant: small-caps;
       text-align: center; }
     .blog-grid .row .column .date {
       text-align: center;
@@ -680,7 +693,9 @@ header {
 nav ul {
   font-family: 'Garamond Premr Pro';
   letter-spacing: 0.12em;
-  position: relative; }
+  position: relative;
+  font-variant-caps: small-caps;
+  font-variant: small-caps; }
   nav ul * {
     cursor: pointer; }
   nav ul .internal-links {
@@ -740,7 +755,9 @@ nav ul {
       margin-bottom: 2em; }
     #overlay form .title {
       letter-spacing: 0.12em;
-      text-transform: uppercase; }
+      text-transform: lowercase;
+      font-variant-caps: small-caps;
+      font-variant: small-caps; }
     #overlay form input {
       margin-bottom: 0.5em;
       text-align: center;
@@ -751,7 +768,9 @@ nav ul {
       width: 100%;
       margin-bottom: 5em;
       padding: 1.3125em;
-      text-transform: uppercase;
+      text-transform: lowercase;
+      font-variant-caps: small-caps;
+      font-variant: small-caps;
       cursor: pointer;
       font-size: 0.412rem;
       letter-spacing: 0.12em; }
@@ -804,7 +823,9 @@ footer #contentinfo {
         footer #contentinfo ul li:nth-child(1), footer #contentinfo ul li:nth-child(2), footer #contentinfo ul li:nth-child(3) {
           margin: auto; } }
   footer #contentinfo span {
-    text-transform: uppercase; }
+    text-transform: lowercase;
+    font-variant-caps: small-caps;
+    font-variant: small-caps; }
 
 /* Home
          ========================================================================== */
@@ -877,7 +898,9 @@ section h3 {
   .contact #contactinfo ul li {
     padding-bottom: 0.5em; }
   .contact #contactinfo ul .title {
-    text-transform: uppercase; }
+    text-transform: lowercase;
+    font-variant-caps: small-caps;
+    font-variant: small-caps; }
 
 /* Shop
             ========================================================================== */

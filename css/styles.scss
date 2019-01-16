@@ -606,20 +606,26 @@
 
      h1 {
         font-size: 1rem;
-        text-transform: uppercase;
+        text-transform: lowercase;
+        font-variant-caps: small-caps;
+        font-variant: small-caps;
      }
      h2, h3  {
         font-size: 0.647rem;
      }
      h2 {
-       text-transform: uppercase;
+       text-transform: lowercase;
+       font-variant-caps: small-caps;
+       font-variant: small-caps;
      }
      p {
        font-size: 0.412rem;
      }
      nav li {
-        font-size: 0.412rem;
-       text-transform: uppercase;
+        font-size: 0.471rem;
+        text-transform: lowercase;
+        font-variant-caps: small-caps;
+        font-variant: small-caps;
      }
      small, footer li, .small  {
        font-size: 0.353rem;
@@ -723,6 +729,10 @@
         }
       }
 
+      .small-caps {
+        font-variant: small-caps;
+      }
+
       /* Product Grid
          ========================================================================== */
       .product-grid {
@@ -750,7 +760,9 @@
             }
             .small {
               font-family: 'Robinsons Gothic Regular';
-              text-transform: uppercase;
+              text-transform: lowercase;
+              font-variant-caps: small-caps;
+              font-variant: small-caps;
               text-align: center;
               letter-spacing: 0.1em;
             }
@@ -779,7 +791,9 @@
             padding-top: 50px;
 
             .title {
-              text-transform: uppercase;
+              text-transform: lowercase;
+              font-variant-caps: small-caps;
+              font-variant: small-caps;
               text-align: center;
             }
             .date {
@@ -806,6 +820,8 @@
         font-family: 'Garamond Premr Pro';
         letter-spacing: 0.12em;
         position: relative;
+        font-variant-caps: small-caps;
+        font-variant: small-caps;
         * {
           // margin: 0;
           cursor: pointer;
@@ -874,7 +890,9 @@
                 }
                 .title {
                   letter-spacing: 0.12em;
-                   text-transform: uppercase;
+                  text-transform: lowercase;
+                  font-variant-caps: small-caps;
+                  font-variant: small-caps;
                 }
                 input {
                   margin-bottom: 0.5em;
@@ -887,7 +905,9 @@
                  width: 100%;
                  margin-bottom: 5em;
                  padding: 1.3125em;
-                 text-transform: uppercase;
+                 text-transform: lowercase;
+                 font-variant-caps: small-caps;
+                 font-variant: small-caps;
                  cursor: pointer;
                  font-size: 0.412rem;
                  letter-spacing: 0.12em;
@@ -971,7 +991,9 @@
               }
             }
             span {
-              text-transform: uppercase;
+              text-transform: lowercase;
+              font-variant-caps: small-caps;
+              font-variant: small-caps;
             }
           }
         }
@@ -1084,7 +1106,9 @@
                   padding-bottom: 0.5em;
                 }
                .title {
-                 text-transform: uppercase;
+                 text-transform: lowercase;
+                 font-variant-caps: small-caps;
+                 font-variant: small-caps;
                }
              }
            }
