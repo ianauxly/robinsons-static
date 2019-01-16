@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/404.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/404.html",
+		"oF": 0
+		},
 	"/careers.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -353,11 +360,25 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/privacy.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/privacy.html",
+		"oF": 0
+		},
 	"/shop.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/shop.html",
+		"oF": 0
+		},
+	"/terms.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/terms.html",
 		"oF": 0
 		}
 	},

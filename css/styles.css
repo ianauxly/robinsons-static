@@ -817,11 +817,11 @@ footer #contentinfo {
     footer #contentinfo ul li {
       flex: 0 0 auto; }
       footer #contentinfo ul li:nth-child(1) {
-        margin-right: 12px; }
+        margin-right: 0.3em; }
       footer #contentinfo ul li:nth-child(2) {
         margin: 0; }
       footer #contentinfo ul li:nth-child(3) {
-        margin-left: 12px; }
+        margin-left: 0.3em; }
       @media screen and (max-width: 800px) {
         footer #contentinfo ul li:nth-child(1), footer #contentinfo ul li:nth-child(2), footer #contentinfo ul li:nth-child(3) {
           margin: auto; } }
