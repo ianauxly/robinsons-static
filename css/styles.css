@@ -48,6 +48,8 @@ body {
     text-decoration: none;
     color: inherit;
     font-size: inherit; }
+    body *.active {
+      display: block; }
   body:focus {
     outline-color: rgba(0, 0, 0, 0) !important; }
   body ::selection {
@@ -76,7 +78,8 @@ nav [aria-current=page] {
   opacity: 0.4; }
 
 nav a:hover,
-nav a:focus {
+nav a:focus,
+nav li:hover {
   color: #000000;
   background-color: #fff;
   opacity: 0.4;
@@ -676,20 +679,87 @@ header {
 
 nav ul {
   font-family: 'Garamond Premr Pro';
-  display: flex;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  position: relative; }
   nav ul * {
-    margin: 0; }
+    cursor: pointer; }
   nav ul .internal-links {
-    margin-right: 12px; }
+    margin-right: 12px;
+    float: left; }
   nav ul .social-links {
-    margin-left: 12px; }
+    margin-left: 12px;
+    float: right; }
 
 #home-button {
-  margin-left: auto;
-  margin-right: auto;
   border: none !important;
-  opacity: 1 !important; }
+  opacity: 1 !important;
+  width: fit-content;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Overlay
+         ========================================================================== */
+#overlay {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  opacity: 0;
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */ }
+  #overlay.active {
+    display: flex;
+    -webkit-animation: fadeIN 0.4s forwards;
+    /* Safari 4+ */
+    -moz-animation: fadeIN 0.4s forwards;
+    /* Fx 5+ */
+    -o-animation: fadeIN 0.4s forwards;
+    /* Opera 12+ */
+    animation: fadeIN 0.4s forwards;
+    /* IE 10+, Fx 29+ */ }
+  #overlay form {
+    max-width: 34vw;
+    min-width: 435px;
+    font-size: 0.471rem;
+    background-color: #ffffff;
+    padding: 2.3125em; }
+    #overlay form .label-wrap, #overlay form .title {
+      margin-bottom: 2em; }
+    #overlay form .title {
+      text-transform: uppercase; }
+    #overlay form input {
+      margin-bottom: 0.5em;
+      text-align: center;
+      font-family: 'Garamond Premr Pro'; }
+    #overlay form [type="submit"] {
+      margin-top: 1em;
+      font-family: 'Garamond Premr Pro';
+      width: 100%;
+      margin-bottom: 5em;
+      padding: 1.3125em;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-size: 0.412rem; }
+    #overlay form .description {
+      text-align: center;
+      width: 100%; }
+    #overlay form .overlay-close {
+      padding-top: 2.3125em;
+      width: 12px;
+      cursor: pointer; }
 
 /* Footer
          ========================================================================== */
@@ -812,3 +882,53 @@ section h3 {
   .shop * {
     background-color: #000000;
     color: #ffffff; }
+
+/* Animations
+           ========================================================================== */
+@-webkit-keyframes fadeIN {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIN {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fadeIN {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIN {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeOUT {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeOUT {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes fadeOUT {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOUT {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }

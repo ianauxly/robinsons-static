@@ -25,8 +25,8 @@
                 <li role="menuitem" class="internal-links">
                   <a href="contact.html">Contact</a>
                 </li>
-                <li role="menuitem" class="internal-links">
-                  <a href="">Newsletter</a>
+                <li id="newsletterNavButton" role="menuitem" class="internal-links">
+                  Newsletter
                 </li>
                 <li role="menuitem" id="home-button">
                   <a href="index.html">Robinsons Cannabis</a>
@@ -42,6 +42,34 @@
                 </li>
               </ul>
             </nav>
+
+            <div id="overlay" class="row center">
+              <form id="newsletter" action="">
+                  <p class="title">
+                    Robinsons Newsletter
+                  </p>
+                  <div class="label-wrap">
+                    <label for="fullName">
+                      <input id="fullName" type="text" name="s_fullname" aria-label="First and last names" aria-required="true">
+                      Name
+                    </label>
+                  </div>
+                  <div class="label-wrap">
+                    <label for="email">
+                      <input id="email" type="text" name="s_email" aria-label="Email address" aria-required="true">
+                      Email Address
+                    </label>
+                  </div>
+                  <input type="submit" id="s_enter" value="Subscribe">
+                  <p class="description">
+                    By submitting your information, you are agreeing to receive email from us, including newsletters, reports, press releases, and invitations
+                    to special events. You can unsubscribe and withdraw your consent at
+                    any time by contacting us.
+                  </p>
+                  <img class="overlay-close" src="images/SVG/ex.svg" alt="">
+              </form>
+            </div>
+
           </header>
 
 
@@ -120,6 +148,6 @@
     </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main-min.js"></script>
 </body>
 </html>
