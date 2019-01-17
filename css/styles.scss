@@ -836,6 +836,28 @@
         width: 100%;
         top: 0;
         left: 0;
+        transition: 0.7s;
+
+        &.hideOnScroll {
+            -webkit-transform: translateY(-81px);
+            transform: translateY(-81px);
+            -webkit-transition: -webkit-transform .7s;
+            transition: -webkit-transform .7s;
+            transition: transform .7s;
+            transition: transform .7s,-webkit-transform .7s;
+        }
+
+        @media only screen and (min-width: 1280px) {
+          &.hideOnScroll {
+              -webkit-transform: translateY(-2.38rem);
+              transform: translateY(-2.38rem);
+              -webkit-transition: -webkit-transform .7s;
+              transition: -webkit-transform .7s;
+              transition: transform .7s;
+              transition: transform .7s,-webkit-transform .7s;
+          }
+        }
+
       }
       nav ul {
         font-family: 'Garamond Premr Pro';
@@ -844,7 +866,6 @@
         font-variant-caps: small-caps;
         font-variant: small-caps;
         * {
-          // margin: 0;
           cursor: pointer;
         }
         .internal-links {
@@ -879,7 +900,7 @@
              left: 0;
              right: 0;
              bottom: 0;
-             background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+             background-color: rgba(0,0,0,0.7); /* Black background with opacity */
              z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 
              &.active {
