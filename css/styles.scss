@@ -708,7 +708,7 @@
       .inner-width {
         width: calc(100% - 2.94rem);
         @media only screen and (max-width: 767px) {
-          width: calc(100% - 60px;);
+          width: calc(100% - 30px;);
         }
       }
 
@@ -870,7 +870,7 @@
          #overlay {
              position: fixed; /* Sit on top of the page content */
              display: none; /* Hidden by default */
-              opacity: 0;
+            opacity: 0;
              width: 100%; /* Full width (cover the whole page) */
              height: 100%; /* Full height (cover the whole page) */
              top: 0;
@@ -899,13 +899,19 @@
 
              form {
                 max-width: 34vw;
-                min-width: 435px;
+                min-width: 12.79rem;
                 font-size: 0.471rem;
                 background-color: #ffffff;
                 padding: 2.3125em;
+                @media only screen and (max-width: 600px) {
+                    min-width: 93vw;
+                }
 
                 .label-wrap, .title  {
                   margin-bottom: 2em;
+                  @media only screen and (max-width: 600px) {
+                    margin-bottom: 1em;
+                  }
                 }
                 .title {
                   font-size: 0.471rem;
@@ -930,6 +936,9 @@
                  font-variant: small-caps;
                  cursor: pointer;
                  letter-spacing: 0.12em;
+                 @media only screen and (max-width: 600px) {
+                   margin-bottom: 1em;
+                 }
 
                  &:hover,
                  &:focus {
@@ -945,6 +954,9 @@
                  padding-top: 2.3125em;
                  width: 12px;
                  cursor: pointer;
+                 @media only screen and (min-width: 1280px) {
+                     width: 0.352rem;
+                 }
                }
              }
          }

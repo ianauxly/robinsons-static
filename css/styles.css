@@ -615,7 +615,7 @@ main {
   width: calc(100% - 2.94rem); }
   @media only screen and (max-width: 767px) {
     .inner-width {
-      width: calc(100% - 60px); } }
+      width: calc(100% - 30px); } }
 
 .row.center {
   align-items: center;
@@ -766,12 +766,18 @@ nav ul {
     /* IE 10+, Fx 29+ */ }
   #overlay form {
     max-width: 34vw;
-    min-width: 435px;
+    min-width: 12.79rem;
     font-size: 0.471rem;
     background-color: #ffffff;
     padding: 2.3125em; }
+    @media only screen and (max-width: 600px) {
+      #overlay form {
+        min-width: 93vw; } }
     #overlay form .label-wrap, #overlay form .title {
       margin-bottom: 2em; }
+      @media only screen and (max-width: 600px) {
+        #overlay form .label-wrap, #overlay form .title {
+          margin-bottom: 1em; } }
     #overlay form .title {
       font-size: 0.471rem;
       letter-spacing: 0.12em;
@@ -793,6 +799,9 @@ nav ul {
       font-variant: small-caps;
       cursor: pointer;
       letter-spacing: 0.12em; }
+      @media only screen and (max-width: 600px) {
+        #overlay form [type="submit"] {
+          margin-bottom: 1em; } }
       #overlay form [type="submit"]:hover, #overlay form [type="submit"]:focus {
         background: #000000;
         color: #ffffff; }
@@ -803,6 +812,9 @@ nav ul {
       padding-top: 2.3125em;
       width: 12px;
       cursor: pointer; }
+      @media only screen and (min-width: 1280px) {
+        #overlay form .overlay-close {
+          width: 0.352rem; } }
 
 /* Footer
          ========================================================================== */
