@@ -913,10 +913,10 @@ section h3 {
     background-color: #000000;
     color: #ffffff; }
 
-/* Shop
+/* Terms, Privacy, Careers - Indexed Layout
            ========================================================================== */
 .terms, .privacy, .careers {
-  max-width: 733px; }
+  max-width: 21.55rem; }
   .terms .row, .privacy .row, .careers .row {
     border-top: 1px solid #000000;
     padding: 0.5em 0 1em 0; }
