@@ -15,8 +15,10 @@
      background-color: inherit;
      font-family: 'Garamond Premr Pro', Fallback, sans-serif;
      font-weight: 100;
-     font-size: 34px;
-     // font-size: 2.65vw;
+     font-size: 2.65vw;
+     @media screen and (max-width: 1280px) {
+        font-size: 34px;
+     }
   }
   *, *::before, *::after {
     box-sizing: border-box;
@@ -615,14 +617,14 @@
         font-variant-caps: small-caps;
         font-variant: small-caps;
      }
-     h2, h3  {
-        font-size: 0.647rem;
-     }
      h2 {
        font-size: 1rem;
        text-transform: lowercase;
        font-variant-caps: small-caps;
        font-variant: small-caps;
+     }
+     h3  {
+        font-size: 0.647rem;
      }
      p {
        font-size: 0.412rem;
@@ -643,11 +645,12 @@
     }
 
     main {
-      min-height: calc(100vh - 141px);
+      min-height: calc(100vh - 4.147rem);
+      padding-top: 2.38rem;
       padding-bottom: 100px;
-      padding-top: 81px;
-      @media screen and (max-width: 800px) {
-
+      @media screen and (max-width: 1280px) {
+        padding-top: 81px;
+        min-height: calc(100vh - 141px);
       }
     }
      .row {
@@ -703,7 +706,7 @@
       }
 
       .inner-width {
-        width: calc(100% - 100px);
+        width: calc(100% - 2.94rem);
       }
 
       .row.center {
@@ -1020,8 +1023,8 @@
         }
       }
       section.blockquote {
-        padding: 250px 0;
-        max-width: 800px;
+        padding: 7.35rem 0;
+        max-width: 23.529rem;
 
         h2 {
           padding-bottom: 1em;
@@ -1030,8 +1033,10 @@
 
       section {
         .square {
-            padding: 250px 0;
-            max-width: 600px;
+            padding: 7.35rem 0;
+            max-width: 17.647rem;
+
+
           }
 
         h2 {
@@ -1049,7 +1054,7 @@
       }
 
       #logo {
-        min-height: calc(100vh - 2.44rem);
+        min-height: calc(100vh - 2.35rem);
         background-color: #0c3520;
 
         h1 {
