@@ -65,7 +65,9 @@ body {
     color: #ffffff;
     opacity: 1; }
   body.scroll-pause {
-    overflow-y: hidden; }
+    overflow-y: hidden;
+    overflow: hidden;
+    position: fixed; }
 
 /**
    * Add the correct display in IE 9-.
