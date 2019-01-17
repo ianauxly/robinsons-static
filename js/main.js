@@ -40,21 +40,21 @@ $(document).ready(function() {
   //* Header Disappear/Reappear on Scroll
   //  ==========================================================================
 
-  var lastScrollTop,
-      $header;
-
-  lastScrollTop = 0;
-  $header = $('header');
-
-  $(window).scroll(function(){
-     var st = $(this).scrollTop();
-     if (st > lastScrollTop){
-         // downscroll code
-         $header.addClass('hideOnScroll');
-     } else {
-        // upscroll code
-        $header.removeClass('hideOnScroll');
-     }
-     lastScrollTop = st;
-  });
+  // var lastScrollTop,
+  //     $header;
+  //
+  // lastScrollTop = 0;
+  // $header = $('header');
+  //
+  // $(window).scroll(function(){
+  //    var st = $(this).scrollTop();
+  //    if (st > lastScrollTop){
+  //        // downscroll code
+  //        $header.addClass('hideOnScroll');
+  //    } else {
+  //       // upscroll code
+  //       $header.removeClass('hideOnScroll');
+  //    }
+  //    lastScrollTop = st;
+  // });
 });

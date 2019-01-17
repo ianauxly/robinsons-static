@@ -838,25 +838,25 @@
         left: 0;
         transition: 0.7s;
 
-        &.hideOnScroll {
-            -webkit-transform: translateY(-81px);
-            transform: translateY(-81px);
-            -webkit-transition: -webkit-transform .7s;
-            transition: -webkit-transform .7s;
-            transition: transform .7s;
-            transition: transform .7s,-webkit-transform .7s;
-        }
-
-        @media only screen and (min-width: 1280px) {
-          &.hideOnScroll {
-              -webkit-transform: translateY(-2.38rem);
-              transform: translateY(-2.38rem);
-              -webkit-transition: -webkit-transform .7s;
-              transition: -webkit-transform .7s;
-              transition: transform .7s;
-              transition: transform .7s,-webkit-transform .7s;
-          }
-        }
+        // &.hideOnScroll {
+        //     -webkit-transform: translateY(-81px);
+        //     transform: translateY(-81px);
+        //     -webkit-transition: -webkit-transform .7s;
+        //     transition: -webkit-transform .7s;
+        //     transition: transform .7s;
+        //     transition: transform .7s,-webkit-transform .7s;
+        // }
+        //
+        // @media only screen and (min-width: 1280px) {
+        //   &.hideOnScroll {
+        //       -webkit-transform: translateY(-2.38rem);
+        //       transform: translateY(-2.38rem);
+        //       -webkit-transition: -webkit-transform .7s;
+        //       transition: -webkit-transform .7s;
+        //       transition: transform .7s;
+        //       transition: transform .7s,-webkit-transform .7s;
+        //   }
+        // }
 
       }
       nav ul {
