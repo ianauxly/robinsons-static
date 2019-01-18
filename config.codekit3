@@ -261,6 +261,13 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/robinsons-drone-field.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/images/robinsons-drone-field.mp4",
+		"oF": 0
+		},
 	"/images/Robinsons_Map.jpg": {
 		"ft": 16384,
 		"iS": 570798,

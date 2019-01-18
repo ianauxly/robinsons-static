@@ -897,7 +897,25 @@ section h3 {
     color: #ffffff;
     font-family: 'Robinsons Gothic Regular';
     font-size: 3.117rem;
-    letter-spacing: 0.206rem; }
+    letter-spacing: 0.206rem;
+    background: transparent; }
+    @media screen and (max-width: 800px) {
+      #logo h1 {
+        font-size: 20vw; } }
+  #logo .hero-text {
+    background: transparent;
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    max-width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.full-screen-video {
+  height: 100vh;
+  width: 100vw; }
+  .full-screen-video video {
+    height: 100%; }
 
 #tagline h3 {
   text-align: center; }
