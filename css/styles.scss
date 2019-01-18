@@ -1134,10 +1134,10 @@
         video {
           opacity: 0;
           -webkit-animation-fill-mode: forwards;
-          -webkit-animation: fadeIN 3s 0.3s forwards; /* Safari 4+ */
-          -moz-animation:    fadeIN 3s 0.3s forwards; /* Fx 5+ */
-          -o-animation:      fadeIN 3s 0.3s forwards; /* Opera 12+ */
-          animation:         fadeIN 3s 0.3s forwards; /* IE 10+, Fx 29+ */
+          -webkit-animation: fadeIN 3s 1.5s forwards; /* Safari 4+ */
+          -moz-animation:    fadeIN 3s 1.5s forwards; /* Fx 5+ */
+          -o-animation:      fadeIN 3s 1.5s forwards; /* Opera 12+ */
+          animation:         fadeIN 3s 1.5s forwards; /* IE 10+, Fx 29+ */
           height: 100%;
           @media screen and (min-width: 2050px) {
               width: 100%;
