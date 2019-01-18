@@ -910,13 +910,26 @@ section h3 {
     overflow: hidden;
     max-width: 100%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    z-index: 100; }
 
 .full-screen-video {
   height: 100vh;
   width: 100vw;
   overflow: hidden; }
   .full-screen-video video {
+    opacity: 0;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation: fadeIN 3s forwards;
+    /* Safari 4+ */
+    -moz-animation: fadeIN 3s forwards;
+    /* Fx 5+ */
+    -o-animation: fadeIN 3s forwards;
+    /* Opera 12+ */
+    animation: fadeIN 3s forwards;
+    /* IE 10+, Fx 29+ */
     height: 100%; }
     @media screen and (min-width: 2050px) {
       .full-screen-video video {
