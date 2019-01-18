@@ -710,7 +710,8 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 999; }
+  z-index: 999;
+  min-height: 83.03px; }
 
 nav ul {
   font-family: 'Garamond Premr Pro';
@@ -726,6 +727,10 @@ nav ul {
   nav ul .social-links {
     margin-left: 12px;
     float: right; }
+  @media only screen and (max-width: 1045px) {
+    nav ul .social-links,
+    nav ul .internal-links {
+      display: none; } }
 
 #home-button {
   border: none !important;
@@ -755,10 +760,11 @@ nav ul {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
   /* Black background with opacity */
-  z-index: 2;
+  z-index: 200;
   /* Specify a stack order in case you're using a different order for other elements */ }
   #overlay.active {
     display: flex;
+    opacity: 1;
     -webkit-animation: fadeIN 0.4s forwards;
     /* Safari 4+ */
     -moz-animation: fadeIN 0.4s forwards;
@@ -921,13 +927,13 @@ section h3 {
   .full-screen-video video {
     opacity: 0;
     -webkit-animation-fill-mode: forwards;
-    -webkit-animation: fadeIN 3s 1.5s forwards;
+    -webkit-animation: fadeINvideo 28.7s 1.5s forwards;
     /* Safari 4+ */
-    -moz-animation: fadeIN 3s 1.5s forwards;
+    -moz-animation: fadeINvideo 28.7s 1.5s forwards;
     /* Fx 5+ */
-    -o-animation: fadeIN 3s 1.5s forwards;
+    -o-animation: fadeINvideo 28.7s 1.5s forwards;
     /* Opera 12+ */
-    animation: fadeIN 3s 1.5s forwards;
+    animation: fadeINvideo 28.7s 1.5s forwards;
     /* IE 10+, Fx 29+ */
     height: 100%; }
     @media screen and (min-width: 2050px) {
@@ -1009,6 +1015,46 @@ section h3 {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@-webkit-keyframes fadeINvideo {
+  0% {
+    opacity: 0; }
+  4% {
+    opacity: 1; }
+  96% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeINvideo {
+  0% {
+    opacity: 0; }
+  4% {
+    opacity: 1; }
+  96% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes fadeINvideo {
+  0% {
+    opacity: 0; }
+  4% {
+    opacity: 1; }
+  96% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeINvideo {
+  0% {
+    opacity: 0; }
+  4% {
+    opacity: 1; }
+  96% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 @-webkit-keyframes fadeOUT {
   0% {

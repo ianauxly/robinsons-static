@@ -837,6 +837,7 @@
         top: 0;
         left: 0;
         z-index: 999;
+        min-height: 83.03px;
         // &.hideOnScroll {
         //     -webkit-transform: translateY(-81px);
         //     transform: translateY(-81px);
@@ -875,6 +876,12 @@
           margin-left: 12px;
           float: right;
         }
+        @media only screen and (max-width: 1045px) {
+          .social-links,
+          .internal-links {
+            display: none;
+          }
+        }
       }
       #home-button {
         border: none !important;
@@ -900,11 +907,11 @@
              right: 0;
              bottom: 0;
              background-color: rgba(0,0,0,0.7); /* Black background with opacity */
-             z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+             z-index: 200; /* Specify a stack order in case you're using a different order for other elements */
 
              &.active {
                display: flex;
-
+                opacity: 1;
                -webkit-animation: fadeIN 0.4s forwards; /* Safari 4+ */
                -moz-animation:    fadeIN 0.4s forwards; /* Fx 5+ */
                -o-animation:      fadeIN 0.4s forwards; /* Opera 12+ */
@@ -1134,10 +1141,10 @@
         video {
           opacity: 0;
           -webkit-animation-fill-mode: forwards;
-          -webkit-animation: fadeIN 3s 1.5s forwards; /* Safari 4+ */
-          -moz-animation:    fadeIN 3s 1.5s forwards; /* Fx 5+ */
-          -o-animation:      fadeIN 3s 1.5s forwards; /* Opera 12+ */
-          animation:         fadeIN 3s 1.5s forwards; /* IE 10+, Fx 29+ */
+          -webkit-animation: fadeINvideo 28.7s 1.5s forwards; /* Safari 4+ */
+          -moz-animation:    fadeINvideo 28.7s 1.5s forwards; /* Fx 5+ */
+          -o-animation:      fadeINvideo 28.7s 1.5s forwards; /* Opera 12+ */
+          animation:         fadeINvideo 28.7s 1.5s forwards; /* IE 10+, Fx 29+ */
           height: 100%;
           @media screen and (min-width: 2050px) {
               width: 100%;
@@ -1230,22 +1237,46 @@
 
         /* Animations
            ========================================================================== */
+         @-webkit-keyframes fadeIN {
+           0%   { opacity: 0; }
+           100% { opacity: 1; }
+         }
+         @-moz-keyframes fadeIN {
+           0%   { opacity: 0; }
+           100% { opacity: 1; }
+         }
+         @-o-keyframes fadeIN {
+           0%   { opacity: 0; }
+           100% { opacity: 1; }
+         }
+         @keyframes fadeIN {
+           0%   { opacity: 0; }
+           100% { opacity: 1; }
+         }
 
-        @-webkit-keyframes fadeIN {
+        @-webkit-keyframes fadeINvideo {
           0%   { opacity: 0; }
-          100% { opacity: 1; }
+          4%  { opacity: 1; }
+          96% { opacity: 1; }
+          100% { opacity: 0; }
         }
-        @-moz-keyframes fadeIN {
+        @-moz-keyframes fadeINvideo {
           0%   { opacity: 0; }
-          100% { opacity: 1; }
+          4%  { opacity: 1; }
+          96% { opacity: 1; }
+          100% { opacity: 0; }
         }
-        @-o-keyframes fadeIN {
+        @-o-keyframes fadeINvideo {
           0%   { opacity: 0; }
-          100% { opacity: 1; }
+          4%  { opacity: 1; }
+          96% { opacity: 1; }
+          100% { opacity: 0; }
         }
-        @keyframes fadeIN {
+        @keyframes fadeINvideo {
           0%   { opacity: 0; }
-          100% { opacity: 1; }
+          4%  { opacity: 1; }
+          96% { opacity: 1; }
+          100% { opacity: 0; }
         }
 
 
