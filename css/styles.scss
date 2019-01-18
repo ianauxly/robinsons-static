@@ -648,7 +648,7 @@
 
     main {
       min-height: calc(100vh - 4.147rem);
-      padding-top: 1.95rem;
+      padding-top: 2.38rem;
       padding-bottom: 100px;
       @media screen and (max-width: 1280px) {
         padding-top: 81px;
@@ -836,11 +836,7 @@
         width: 100%;
         top: 0;
         left: 0;
-        z-index: 999;
-        // transition: 0.7s;
-        @media only screen and (min-width: 1280px) {
-            padding: 1.5em 0;
-        }
+
         // &.hideOnScroll {
         //     -webkit-transform: translateY(-81px);
         //     transform: translateY(-81px);
@@ -1102,14 +1098,8 @@
       }
 
       #logo {
-        min-height: calc(100vh - 1.9rem);
+        min-height: calc(100vh - 2.35rem);
         background-color: #0c3520;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        max-width: 100%;
-        min-width: 100%;
 
         h1 {
           color: #ffffff;
@@ -1117,63 +1107,6 @@
           font-size: 3.117rem;
           letter-spacing: 0.206rem;
         }
-
-              /* Video background */
-              .videobg {
-                position: relative;
-                width: 100%; /* Set video container element width here */
-                height: 100%; /* Set video container element height here */
-                overflow: hidden;
-                background: #111; /* bg color, if video is not high enough */
-              }
-
-              /* horizontally center the video */
-              .videobg-width {
-                position: absolute;
-                width: 100%; /* Change width value to cover more area*/
-                height: 100%;
-                left: -9999px;
-                right: -9999px;
-                margin: auto;
-              }
-
-              /* set video aspect ratio and vertically center */
-              .videobg-aspect {
-                position: absolute;
-                width: 100%;
-                height: 0;
-                top: -9999px;
-                bottom: -9999px;
-                margin: auto;
-                padding-bottom: 56.25%; /* 16:9 ratio */
-                overflow: hidden;
-
-              }
-
-              .videobg-make-height {
-                position: absolute;
-                top: 0; right: 0; bottom: 0; left: 0;
-              }
-
-              .videobg-hide-controls {
-                box-sizing: content-box;
-                position: relative;
-                height: 100%;
-                width: 100%;
-                /* Vimeo timeline and play button are ~55px high */
-                padding: 55px 97.7777px; /* 16:9 ratio */
-                top: -55px;
-                left: -97.7777px; /* 16:9 ratio */
-              }
-
-              .videobg iframe {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                border: 0 none;
-              }
       }
 
       #tagline {
