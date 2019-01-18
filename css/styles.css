@@ -66,8 +66,10 @@ body {
     opacity: 1; }
   body.scroll-pause {
     overflow-y: hidden;
-    overflow: hidden;
-    position: fixed; }
+    overflow: hidden; }
+    @media screen and (max-width: 600px) {
+      body.scroll-pause {
+        position: fixed; } }
 
 /**
    * Add the correct display in IE 9-.
@@ -568,7 +570,7 @@ small, footer li, .small {
 
 main {
   min-height: calc(100vh - 4.147rem);
-  padding-top: 2.38rem;
+  padding-top: 1.95rem;
   padding-bottom: 100px; }
   @media screen and (max-width: 1280px) {
     main {
@@ -646,6 +648,11 @@ main {
   font-variant-caps: small-caps;
   font-variant: small-caps; }
 
+.newsletter-button {
+  cursor: pointer; }
+  .newsletter-button:hover {
+    border-bottom: .01em solid #000000; }
+
 /* Product Grid
          ========================================================================== */
 .product-grid h2 {
@@ -712,6 +719,9 @@ header {
   left: 0;
   z-index: 999;
   min-height: 83.03px; }
+  @media only screen and (min-width: 1280px) {
+    header {
+      padding: 1.5em 0; } }
 
 nav ul {
   font-family: 'Garamond Premr Pro';
@@ -898,7 +908,7 @@ section h3 {
   -webkit-shape-inside: polygon(0px 0px, 0 300px, 300px 300px); }
 
 #logo {
-  max-height: calc(100vh - 2.35rem);
+  max-height: calc(100vh - 2rem);
   background-color: #0c3520;
   overflow: hidden; }
   #logo h1 {

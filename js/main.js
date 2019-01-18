@@ -7,14 +7,25 @@ $(document).ready(function() {
   var $newsletterNav,
       $overlay,
       $overlayClose,
-      $body;
+      $body,
+      $newsletterNavButton;
 
    $newsletterNav = $("#newsletterNavButton");
    $overlay = $("#overlay");
    $overlayClose = $(".overlay-close");
    $body = $("body");
+   $newsletterNavButton = $('.newsletter-button');
+
 
   $newsletterNav.click(function() {
+      $overlay.addClass("active");
+      $overlay.removeClass("closed");
+      $body.addClass("scroll-pause");
+  });
+
+  $newsletterNavButton.click(function(event) {
+      event.stopPropagation();
+
       $overlay.addClass("active");
       $overlay.removeClass("closed");
       $body.addClass("scroll-pause");

@@ -76,7 +76,9 @@
     &.scroll-pause {
       overflow-y: hidden;
       overflow: hidden;
-      position: fixed;
+      @media screen and (max-width: 600px) {
+        position: fixed;
+      }
     }
   }
 
@@ -648,7 +650,7 @@
 
     main {
       min-height: calc(100vh - 4.147rem);
-      padding-top: 2.38rem;
+      padding-top: 1.95rem;
       padding-bottom: 100px;
       @media screen and (max-width: 1280px) {
         padding-top: 81px;
@@ -749,6 +751,12 @@
         font-variant: small-caps;
       }
 
+      .newsletter-button {
+          cursor: pointer;
+          &:hover {
+            border-bottom: .01em solid #000000;
+          }
+      }
       /* Product Grid
          ========================================================================== */
       .product-grid {
@@ -838,6 +846,10 @@
         left: 0;
         z-index: 999;
         min-height: 83.03px;
+
+        @media only screen and (min-width: 1280px) {
+          padding: 1.5em 0;
+        }
         // &.hideOnScroll {
         //     -webkit-transform: translateY(-81px);
         //     transform: translateY(-81px);
@@ -1105,7 +1117,7 @@
       }
 
       #logo {
-        max-height: calc(100vh - 2.35rem);
+        max-height: calc(100vh - 2rem);
         background-color: #0c3520;
         overflow: hidden;
 
