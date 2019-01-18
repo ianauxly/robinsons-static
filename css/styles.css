@@ -891,8 +891,9 @@ section h3 {
   -webkit-shape-inside: polygon(0px 0px, 0 300px, 300px 300px); }
 
 #logo {
-  min-height: calc(100vh - 2.35rem);
-  background-color: #0c3520; }
+  max-height: calc(100vh - 2.35rem);
+  background-color: #0c3520;
+  overflow: hidden; }
   #logo h1 {
     color: #ffffff;
     font-family: 'Robinsons Gothic Regular';
@@ -913,9 +914,14 @@ section h3 {
 
 .full-screen-video {
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  overflow: hidden; }
   .full-screen-video video {
     height: 100%; }
+    @media screen and (min-width: 2050px) {
+      .full-screen-video video {
+        width: 100%;
+        height: auto; } }
 
 #tagline h3 {
   text-align: center; }

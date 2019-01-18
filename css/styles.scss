@@ -1098,8 +1098,9 @@
       }
 
       #logo {
-        min-height: calc(100vh - 2.35rem);
+        max-height: calc(100vh - 2.35rem);
         background-color: #0c3520;
+        overflow: hidden;
 
         h1 {
           color: #ffffff;
@@ -1127,9 +1128,14 @@
       .full-screen-video {
         height: 100vh;
         width: 100vw;
+        overflow: hidden;
 
         video {
           height: 100%;
+          @media screen and (min-width: 2050px) {
+              width: 100%;
+              height: auto;
+          }
         }
       }
 
