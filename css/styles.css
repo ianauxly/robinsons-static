@@ -67,9 +67,6 @@ body {
   body.scroll-pause {
     overflow-y: hidden;
     overflow: hidden; }
-    @media screen and (max-width: 600px) {
-      body.scroll-pause {
-        position: fixed; } }
 
 /**
    * Add the correct display in IE 9-.
@@ -717,8 +714,10 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 999;
-  min-height: 83.03px; }
+  z-index: 999; }
+  @media only screen and (max-width: 1280px) {
+    header {
+      min-height: 83.03px; } }
   @media only screen and (min-width: 1280px) {
     header {
       padding: 1.5em 0; } }
@@ -731,15 +730,20 @@ nav ul {
   font-variant: small-caps; }
   nav ul * {
     cursor: pointer; }
-  nav ul .internal-links {
+  nav ul .internal-links,
+  nav ul #menuMobileToggle {
     margin-right: 12px;
     float: left; }
-  nav ul .social-links {
+  nav ul .social-links,
+  nav ul #cart {
     margin-left: 12px;
     float: right; }
   @media only screen and (max-width: 1045px) {
     nav ul .social-links,
     nav ul .internal-links {
+      display: none; } }
+  @media only screen and (min-width: 1045px) {
+    nav ul .mobile-links {
       display: none; } }
 
 #home-button {
@@ -835,6 +839,43 @@ nav ul {
         #overlay form .overlay-close {
           width: 0.352rem; } }
 
+/* MOBILE Menu
+        ========================================================================== */
+#mobileMenu {
+  top: 100%;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: 200; }
+  #mobileMenu.active {
+    display: block;
+    opacity: 1;
+    -webkit-animation: fadeIN 0.4s forwards;
+    /* Safari 4+ */
+    -moz-animation: fadeIN 0.4s forwards;
+    /* Fx 5+ */
+    -o-animation: fadeIN 0.4s forwards;
+    /* Opera 12+ */
+    animation: fadeIN 0.4s forwards;
+    /* IE 10+, Fx 29+ */ }
+  #mobileMenu nav {
+    color: #ffffff;
+    padding-top: 1em;
+    font-size: 8.53vw;
+    line-height: 1em; }
+    #mobileMenu nav * {
+      font-size: inherit;
+      line-height: inherit; }
+    #mobileMenu nav .overlay-close img {
+      width: 4.31vw;
+      padding-top: 1em; }
+
 /* Footer
          ========================================================================== */
 footer.shop #logos {
@@ -919,7 +960,7 @@ section h3 {
     background: transparent; }
     @media screen and (max-width: 800px) {
       #logo h1 {
-        font-size: 20vw; } }
+        font-size: 18vw; } }
   #logo .hero-text {
     background: transparent;
     text-align: center;

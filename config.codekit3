@@ -16,13 +16,6 @@
 		"oAP": "/404.html",
 		"oF": 0
 		},
-	"/Adobe - GaramondPremrPro-Capt.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/Adobe - GaramondPremrPro-Capt.otf",
-		"oF": 0
-		},
 	"/careers.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -59,6 +52,13 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/fonts/Adobe - GaramondPremrPro-Capt.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/fonts/Adobe - GaramondPremrPro-Capt.otf",
+		"oF": 0
 		},
 	"/fonts/GaramondPremrPro-Capt.otf": {
 		"cB": 0,
@@ -264,6 +264,72 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/mobile/000000160002.jpg": {
+		"ft": 16384,
+		"iS": 666073,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/mobile/000000160002.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/mobile/000010850010.jpg": {
+		"ft": 16384,
+		"iS": 935872,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/mobile/000010850010.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/mobile/000010860010.jpg": {
+		"ft": 16384,
+		"iS": 839237,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/mobile/000010860010.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/mobile/000010880002.jpg": {
+		"ft": 16384,
+		"iS": 1210480,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/mobile/000010880002.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/mobile/000010980006.jpg": {
+		"ft": 16384,
+		"iS": 584617,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/mobile/000010980006.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/mobile/000011060010.jpg": {
+		"ft": 16384,
+		"iS": 851219,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/mobile/000011060010.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/river.jpg": {
 		"ft": 16384,
 		"iS": 5197744,
@@ -292,6 +358,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"/images/SVG/ex-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/SVG/ex-white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/images/SVG/ex.svg": {
 		"ft": 2097152,

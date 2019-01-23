@@ -19,6 +19,9 @@
      @media screen and (max-width: 1280px) {
         font-size: 34px;
      }
+      // @media screen and (max-width: 1280px) {
+      //   font-size: 8.53vw;
+      // }
   }
   *, *::before, *::after {
     box-sizing: border-box;
@@ -76,9 +79,9 @@
     &.scroll-pause {
       overflow-y: hidden;
       overflow: hidden;
-      @media screen and (max-width: 600px) {
-        position: fixed;
-      }
+      // @media screen and (max-width: 600px) {
+      //   position: fixed;
+      // }
     }
   }
 
@@ -845,8 +848,9 @@
         top: 0;
         left: 0;
         z-index: 999;
-        min-height: 83.03px;
-
+        @media only screen and (max-width: 1280px) {
+          min-height: 83.03px;
+        }
         @media only screen and (min-width: 1280px) {
           padding: 1.5em 0;
         }
@@ -880,17 +884,25 @@
         * {
           cursor: pointer;
         }
-        .internal-links {
+        .internal-links,
+        #menuMobileToggle {
           margin-right: 12px;
           float: left;
         }
-        .social-links {
+        .social-links,
+        #cart {
           margin-left: 12px;
           float: right;
         }
+
         @media only screen and (max-width: 1045px) {
           .social-links,
           .internal-links {
+            display: none;
+          }
+        }
+        @media only screen and (min-width: 1045px) {
+          .mobile-links {
             display: none;
           }
         }
@@ -1001,6 +1013,45 @@
                }
              }
          }
+     /* MOBILE Menu
+        ========================================================================== */
+      #mobileMenu {
+        top: 100%;
+        position: absolute;
+        display: none;
+        opacity: 0;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        z-index: 200;
+
+        &.active {
+          display: block;
+           opacity: 1;
+          -webkit-animation: fadeIN 0.4s forwards; /* Safari 4+ */
+          -moz-animation:    fadeIN 0.4s forwards; /* Fx 5+ */
+          -o-animation:      fadeIN 0.4s forwards; /* Opera 12+ */
+          animation:         fadeIN 0.4s forwards; /* IE 10+, Fx 29+ */
+        }
+
+        nav {
+          color: #ffffff;
+          padding-top: 1em;
+          font-size: 8.53vw;
+          line-height: 1em;
+          * {
+            font-size: inherit;
+            line-height: inherit;
+          }
+          .overlay-close img {
+            width: 4.31vw;
+            padding-top: 1em;
+          }
+        }
+      }
 
       /* Footer
          ========================================================================== */
@@ -1128,7 +1179,7 @@
           letter-spacing: 0.206rem;
           background: transparent;
           @media screen and (max-width: 800px) {
-              font-size: 20vw;
+              font-size: 18vw;
           }
         }
 
