@@ -37,20 +37,32 @@ $(document).ready(function() {
       $body.removeClass("scroll-pause");
   });
 
+  // $(document).on('click', function (e) {
+  //     if (
+  //       $(e.target).closest("#newsletter").length === 0 &&
+  //       $(e.target).closest("#newsletterNavButton").length === 0
+  //     ) {
+  //         $overlay.removeClass("active");
+  //         $overlay.addClass("closed");
+  //         // $body.removeClass("scroll-pause");
+  //     } else if (
+  //       $(e.target).closest("#newsletter").length === 0 &&
+  //       $(e.target).closest("#newsletterNavButton").length === 0 &&
+  //       $(e.target).closest("#menuMobileToggle").length === 0
+  //     ) {
+  //       $body.removeClass("scroll-pause");
+  //     }
+  // });
+
   $(document).on('click', function (e) {
       if (
-        $(e.target).closest("#newsletter").length === 0 &&
-        $(e.target).closest("#newsletterNavButton").length === 0
-      ) {
-          $overlay.removeClass("active");
-          $overlay.addClass("closed");
-          // $body.removeClass("scroll-pause");
-      } else if (
         $(e.target).closest("#newsletter").length === 0 &&
         $(e.target).closest("#newsletterNavButton").length === 0 &&
         $(e.target).closest("#menuMobileToggle").length === 0
       ) {
         $body.removeClass("scroll-pause");
+        $overlay.removeClass("active");
+        $overlay.addClass("closed");
       }
   });
 
