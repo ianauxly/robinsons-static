@@ -8,13 +8,15 @@ $(document).ready(function() {
       $overlay,
       $overlayClose,
       $body,
-      $newsletterNavButton;
+      $newsletterNavButton,
+      $mobileNewsletterNavButton;
 
-   $newsletterNav = $("#newsletterNavButton");
+   $newsletterNav = $(".newsletterNavButton");
    $overlay = $("#overlay");
    $overlayClose = $(".overlay-close");
    $body = $("body");
    $newsletterNavButton = $('.newsletter-button');
+   $mobileNewsletterNavButton = $('#mobileNewsletterNavButton');
 
 
   $newsletterNav.click(function() {
@@ -22,6 +24,7 @@ $(document).ready(function() {
       $overlay.removeClass("closed");
       $body.addClass("scroll-pause");
   });
+
 
   $newsletterNavButton.click(function(event) {
       event.stopPropagation();
@@ -35,6 +38,15 @@ $(document).ready(function() {
       $overlay.removeClass("active");
       $overlay.addClass("closed");
       $body.removeClass("scroll-pause");
+  });
+
+
+  $mobileNewsletterNavButton.click(function() {
+    $overlay.addClass("active");
+    $overlay.removeClass("closed");
+    $body.addClass("scroll-pause");
+    $overlay.addClass("active");
+    $overlay.removeClass("closed");
   });
 
   // $(document).on('click', function (e) {
@@ -57,7 +69,7 @@ $(document).ready(function() {
   $(document).on('click', function (e) {
       if (
         $(e.target).closest("#newsletter").length === 0 &&
-        $(e.target).closest("#newsletterNavButton").length === 0 &&
+        $(e.target).closest(".newsletterNavButton").length === 0 &&
         $(e.target).closest("#menuMobileToggle").length === 0
       ) {
         $body.removeClass("scroll-pause");
