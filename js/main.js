@@ -100,4 +100,38 @@ $(document).ready(function() {
           $body.removeClass("scroll-pause");
       });
 
+
+      //* Remove 'Cannabis' From Nav Title on Mobile
+      //  ==========================================================================
+      var eventFired,
+          $navHomeButtonText;
+
+          eventFired = 0;
+          $navHomeButtonText = $('#home-button a');
+
+          function homeButtonRemoveCannabis() {
+            $navHomeButtonText.text('Robinsons');
+          }
+
+          function homeButtonAddCannabis() {
+            $navHomeButtonText.text('Robinsons Cannabis');
+          }
+
+      if ($(window).width() < 1045) {
+          homeButtonRemoveCannabis();
+      }
+      else {
+          homeButtonAddCannabis();
+      }
+
+      $(window).on('resize', function() {
+          if (!eventFired) {
+              if ($(window).width() < 1045) {
+                  homeButtonRemoveCannabis();
+              } else {
+                  homeButtonAddCannabis();
+              }
+          }
+      });
+
 });
