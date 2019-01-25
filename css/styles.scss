@@ -632,6 +632,9 @@
      }
      h3  {
         font-size: 0.647rem;
+      @media screen and (max-width: 600px) {
+        font-size: 0.520rem;
+      }
      }
      p {
        font-size: 0.412rem;
@@ -749,6 +752,9 @@
         }
         h1 {
           padding: 2.735em 0;
+          @media only screen and (max-width: 800px) {
+            padding: 1em 0;
+          }
         }
         .row {
           max-width: 733px;

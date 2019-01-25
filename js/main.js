@@ -42,14 +42,10 @@ $(document).ready(function() {
 
 
   $mobileNewsletterNavButton.click(function() {
-    // alert("mobile nav clicked");
     $mobileMenu.removeClass("active");
     $mobileMenu.addClass("closed");
     $overlay.addClass("active");
     $overlay.removeClass("closed");
-    // $body.addClass("scroll-pause");
-    // $overlay.addClass("active");
-    // $overlay.removeClass("closed");
   });
 
   // $(document).on('click', function (e) {
@@ -104,25 +100,4 @@ $(document).ready(function() {
           $body.removeClass("scroll-pause");
       });
 
-
-  //* Header Disappear/Reappear on Scroll
-  //  ==========================================================================
-
-  // var lastScrollTop,
-  //     $header;
-  //
-  // lastScrollTop = 0;
-  // $header = $('header');
-  //
-  // $(window).scroll(function(){
-  //    var st = $(this).scrollTop();
-  //    if (st > lastScrollTop){
-  //        // downscroll code
-  //        $header.addClass('hideOnScroll');
-  //    } else {
-  //       // upscroll code
-  //       $header.removeClass('hideOnScroll');
-  //    }
-  //    lastScrollTop = st;
-  // });
 });

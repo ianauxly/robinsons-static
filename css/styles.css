@@ -548,6 +548,9 @@ h2 {
 
 h3 {
   font-size: 0.647rem; }
+  @media screen and (max-width: 600px) {
+    h3 {
+      font-size: 0.520rem; } }
 
 p {
   font-size: 0.412rem; }
@@ -642,6 +645,9 @@ main {
 
 #intro h1 {
   padding: 2.735em 0; }
+  @media only screen and (max-width: 800px) {
+    #intro h1 {
+      padding: 1em 0; } }
 
 #intro .row {
   max-width: 733px; }
