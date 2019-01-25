@@ -725,6 +725,7 @@
       @media only screen and (max-width: 767px) {
         .inner-width-mobile {
           width: calc(100% - 1.5rem);
+          flex-basis: auto;
         }
       }
       @media only screen and (min-width: 767px) {
@@ -1398,6 +1399,10 @@
                .title {
                  padding-right: 1.3em;
                }
+             }
+
+             .job {
+               text-align: center;
              }
            }
 
