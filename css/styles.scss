@@ -841,6 +841,10 @@
             padding: 0.45em;
             @media only screen and (max-width: 600px) {
               padding: 1em 0 1em 0;
+
+              img {
+                padding: 0 1.5em 0 1.5em;
+              }
             }
             img {
               width: 100%;

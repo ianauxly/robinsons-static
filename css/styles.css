@@ -711,7 +711,9 @@ main {
     padding: 0.45em; }
     @media only screen and (max-width: 600px) {
       .product-grid .row .column {
-        padding: 1em 0 1em 0; } }
+        padding: 1em 0 1em 0; }
+        .product-grid .row .column img {
+          padding: 0 1.5em 0 1.5em; } }
     .product-grid .row .column img {
       width: 100%; }
     .product-grid .row .column .title {
