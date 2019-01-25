@@ -708,7 +708,7 @@ main {
     .product-grid .row {
       grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); } }
   .product-grid .row .column {
-    padding: 0.25em; }
+    padding: 0.45em; }
     @media only screen and (max-width: 600px) {
       .product-grid .row .column {
         padding: 1em 0 1em 0; } }

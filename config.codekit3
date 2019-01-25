@@ -209,6 +209,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/cropped/Robinsons_Image_7.jpg": {
+		"ft": 16384,
+		"iS": 2186688,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/cropped/Robinsons_Image_7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/cropped/Robinsons_jar.jpg": {
+		"ft": 16384,
+		"iS": 206629,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/cropped/Robinsons_jar.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/grass-mountain.jpg": {
 		"ft": 16384,
 		"iS": 620012,
@@ -325,6 +347,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/images/mobile/river-with-grass.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/mobile/Robinsons_Image_7-mobile.jpg": {
+		"ft": 16384,
+		"iS": 1152099,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/mobile/Robinsons_Image_7-mobile.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/mobile/Robinsons_Map.jpg": {
+		"ft": 16384,
+		"iS": 237522,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/mobile/Robinsons_Map.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
