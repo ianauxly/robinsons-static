@@ -790,7 +790,7 @@ nav ul {
     nav ul .social-links,
     nav ul .internal-links {
       display: none; } }
-  @media only screen and (min-width: 1045px) {
+  @media only screen and (min-width: 1046px) {
     nav ul .mobile-links {
       display: none; } }
 
