@@ -42,11 +42,14 @@ $(document).ready(function() {
 
 
   $mobileNewsletterNavButton.click(function() {
+    // alert("mobile nav clicked");
+    $mobileMenu.removeClass("active");
+    $mobileMenu.addClass("closed");
     $overlay.addClass("active");
     $overlay.removeClass("closed");
-    $body.addClass("scroll-pause");
-    $overlay.addClass("active");
-    $overlay.removeClass("closed");
+    // $body.addClass("scroll-pause");
+    // $overlay.addClass("active");
+    // $overlay.removeClass("closed");
   });
 
   // $(document).on('click', function (e) {
@@ -70,7 +73,8 @@ $(document).ready(function() {
       if (
         $(e.target).closest("#newsletter").length === 0 &&
         $(e.target).closest(".newsletterNavButton").length === 0 &&
-        $(e.target).closest("#menuMobileToggle").length === 0
+        $(e.target).closest("#menuMobileToggle").length === 0 &&
+        $(e.target).closest("#mobileNewsletterNavButton").length === 0
       ) {
         $body.removeClass("scroll-pause");
         $overlay.removeClass("active");
