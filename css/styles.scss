@@ -16,6 +16,9 @@
      font-family: 'Garamond Premr Pro', Fallback, sans-serif;
      font-weight: 100;
      font-size: 2.65vw;
+     @media screen and (min-width: 1600px) {
+        font-size: 42.4px;
+     }
      @media screen and (max-width: 1280px) {
         font-size: 34px;
      }
@@ -108,7 +111,7 @@
   nav li:hover {
   	// color: #000000;
   	// background-color: #fff;
-    // opacity: 0.4;
+    opacity: 0.4;
     border: none;
   }
 
@@ -638,6 +641,9 @@
      }
      p {
        font-size: 0.412rem;
+       @media screen and (max-width: 600px) {
+         font-size: 0.520rem;
+       }
      }
      nav li {
         font-size: 0.471rem;
@@ -647,6 +653,9 @@
      }
      small, footer li, .small  {
        font-size: 0.353rem;
+       @media screen and (max-width: 600px) {
+         font-size: 0.366rem;
+       }
      }
 
     #wrapper {
@@ -655,13 +664,19 @@
     }
 
     main {
-      min-height: calc(100vh - 4.147rem);
+      min-height: calc(100vh - 5.47rem);
       padding-top: 1.95rem;
       padding-bottom: 100px;
       @media screen and (max-width: 1280px) {
         padding-top: 2.4rem;
-        min-height: calc(100vh - 141px);
+        min-height: calc(100vh - 185px);
         padding-bottom: 0.7rem;
+      }
+      @media screen and (min-width: 1281px) {
+            padding-top: 2.8rem;
+      }
+      @media screen and (max-width: 1280px) {
+        min-height: calc(100vh - 5.47rem);
       }
     }
      .row {
@@ -752,7 +767,7 @@
             text-align: center;
         }
         h1 {
-          padding: 2.735em 0;
+          padding: 1.735em 0;
           @media only screen and (max-width: 800px) {
             padding: 1em 0;
           }
@@ -841,13 +856,17 @@
             padding: 0.45em;
             @media only screen and (max-width: 600px) {
               padding: 1em 0 1em 0;
-
-              img {
-                padding: 0 1.5em 0 1.5em;
-              }
             }
             img {
-              width: 100%;
+              width: 90%;
+              margin: 0 auto;
+              @media only screen and (min-width: 601px) {
+                display: block;
+              }
+              @media only screen and (max-width: 600px) {
+                  padding: 0 1.5em 0 1.5em;
+                  width: 100%;
+              }
             }
 
             .title {
@@ -856,6 +875,9 @@
             }
             .description {
               padding-bottom: 1em;
+              @media only screen and (max-width: 600px) {
+                text-align: center;
+              }
             }
             .small {
               font-family: 'Robinsons Gothic Regular';
@@ -888,7 +910,7 @@
           }
 
           .column {
-            padding: 1em;
+            padding: 0.45em;
             @media only screen and (max-width: 600px) {
               padding: 1em 0 1em 0;
 
@@ -905,6 +927,11 @@
               text-align: center;
               padding-bottom: 1em;
             }
+            @media only screen and (max-width: 600px) {
+              .preview {
+                text-align: center;
+              }
+            }
           }
         }
       }
@@ -913,8 +940,8 @@
    /* Header and Navigation
       ========================================================================== */
       header {
-        font-size: 0.471rem;
-        padding: 2em 0;
+        font-size: 0.771rem;
+        padding: 1.2em 0;
         border-bottom: 1px solid #000000;
         position: fixed;
         width: 100%;
@@ -1152,6 +1179,7 @@
 
               &#thistle{
                 margin-right: 0;
+
               }
               &#lighthouse {
                 margin-left: 0;
@@ -1162,13 +1190,13 @@
               padding-bottom: 0.441rem;
             }
             .small {
-              font-size: 0.265rem;
+              font-size: 0.385rem;
               font-family: 'Robinsons Gothic Regular';
             }
           }
 
           #contentinfo {
-            padding: 1.09rem 0 5.44rem 0;
+            padding: 1.09rem 0 2.72rem 0;
 
             ul {
               justify-content: center;
@@ -1215,6 +1243,9 @@
               font-variant-caps: small-caps;
               font-variant: small-caps;
             }
+            .row {
+              padding: 0 !important;
+            }
           }
         }
 
@@ -1248,6 +1279,7 @@
         .square {
             padding: 7.35rem 0;
             max-width: 17.647rem;
+            text-align-last: center;
             @media screen and (max-width: 800px) {
               padding: 1.5rem 0;
             }
@@ -1389,14 +1421,17 @@
         /* Terms, Privacy, Careers - Indexed Layout
            ========================================================================== */
 
+          .terms, .privacy, .careers {
+            max-width: 24.55rem;
+          }
+           .terms, .privacy, .careers, .shop {
+             // max-width: 21.55rem;
 
-           .terms, .privacy, .careers {
-             max-width: 21.55rem;
-
-             .row {
-               border-top: 1px solid #000000;
+             .row  {
                padding: 0.5em 0 1em 0;
-
+              &:not(:first-child)  {
+                border-top: 1px solid #000000;
+              }
                p {
                  padding-bottom: 1em;
                }
@@ -1404,10 +1439,11 @@
                  padding-right: 1.3em;
                }
              }
-
-             .job {
-               text-align: center;
-             }
+            @media screen and (max-width: 600px) {
+              .job {
+                text-align: center;
+              }
+            }
            }
 
 

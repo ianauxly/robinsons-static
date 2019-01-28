@@ -17,6 +17,9 @@ html {
   font-family: 'Garamond Premr Pro', Fallback, sans-serif;
   font-weight: 100;
   font-size: 2.65vw; }
+  @media screen and (min-width: 1600px) {
+    html {
+      font-size: 42.4px; } }
   @media screen and (max-width: 1280px) {
     html {
       font-size: 34px; } }
@@ -89,6 +92,7 @@ nav [aria-current=page] {
 nav a:hover,
 nav a:focus,
 nav li:hover {
+  opacity: 0.4;
   border: none; }
 
 a {
@@ -554,6 +558,9 @@ h3 {
 
 p {
   font-size: 0.412rem; }
+  @media screen and (max-width: 600px) {
+    p {
+      font-size: 0.520rem; } }
 
 nav li {
   font-size: 0.471rem;
@@ -563,20 +570,29 @@ nav li {
 
 small, footer li, .small {
   font-size: 0.353rem; }
+  @media screen and (max-width: 600px) {
+    small, footer li, .small {
+      font-size: 0.366rem; } }
 
 #wrapper {
   background-color: #ffffff;
   overflow: hidden; }
 
 main {
-  min-height: calc(100vh - 4.147rem);
+  min-height: calc(100vh - 5.47rem);
   padding-top: 1.95rem;
   padding-bottom: 100px; }
   @media screen and (max-width: 1280px) {
     main {
       padding-top: 2.4rem;
-      min-height: calc(100vh - 141px);
+      min-height: calc(100vh - 185px);
       padding-bottom: 0.7rem; } }
+  @media screen and (min-width: 1281px) {
+    main {
+      padding-top: 2.8rem; } }
+  @media screen and (max-width: 1280px) {
+    main {
+      min-height: calc(100vh - 5.47rem); } }
 
 .row {
   display: flex;
@@ -645,7 +661,7 @@ main {
   text-align: center; }
 
 #intro h1 {
-  padding: 2.735em 0; }
+  padding: 1.735em 0; }
   @media only screen and (max-width: 800px) {
     #intro h1 {
       padding: 1em 0; } }
@@ -711,16 +727,25 @@ main {
     padding: 0.45em; }
     @media only screen and (max-width: 600px) {
       .product-grid .row .column {
-        padding: 1em 0 1em 0; }
-        .product-grid .row .column img {
-          padding: 0 1.5em 0 1.5em; } }
+        padding: 1em 0 1em 0; } }
     .product-grid .row .column img {
-      width: 100%; }
+      width: 90%;
+      margin: 0 auto; }
+      @media only screen and (min-width: 601px) {
+        .product-grid .row .column img {
+          display: block; } }
+      @media only screen and (max-width: 600px) {
+        .product-grid .row .column img {
+          padding: 0 1.5em 0 1.5em;
+          width: 100%; } }
     .product-grid .row .column .title {
       text-align: center;
       padding-bottom: 1em; }
     .product-grid .row .column .description {
       padding-bottom: 1em; }
+      @media only screen and (max-width: 600px) {
+        .product-grid .row .column .description {
+          text-align: center; } }
     .product-grid .row .column .small {
       font-family: 'Robinsons Gothic Regular';
       text-transform: uppercase;
@@ -742,7 +767,7 @@ main {
     .blog-grid .row {
       grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); } }
   .blog-grid .row .column {
-    padding: 1em;
+    padding: 0.45em;
     padding-top: 1em; }
     @media only screen and (max-width: 600px) {
       .blog-grid .row .column {
@@ -755,12 +780,15 @@ main {
     .blog-grid .row .column .date {
       text-align: center;
       padding-bottom: 1em; }
+    @media only screen and (max-width: 600px) {
+      .blog-grid .row .column .preview {
+        text-align: center; } }
 
 /* Header and Navigation
       ========================================================================== */
 header {
-  font-size: 0.471rem;
-  padding: 2em 0;
+  font-size: 0.771rem;
+  padding: 1.2em 0;
   border-bottom: 1px solid #000000;
   position: fixed;
   width: 100%;
@@ -951,11 +979,11 @@ footer #logos {
     max-width: 1.676rem;
     padding-bottom: 0.441rem; }
   footer #logos .small {
-    font-size: 0.265rem;
+    font-size: 0.385rem;
     font-family: 'Robinsons Gothic Regular'; }
 
 footer #contentinfo {
-  padding: 1.09rem 0 5.44rem 0; }
+  padding: 1.09rem 0 2.72rem 0; }
   footer #contentinfo ul {
     justify-content: center; }
     footer #contentinfo ul#internal-links li {
@@ -980,6 +1008,8 @@ footer #contentinfo {
     text-transform: lowercase;
     font-variant-caps: small-caps;
     font-variant: small-caps; }
+  footer #contentinfo .row {
+    padding: 0 !important; }
 
 /* Home
          ========================================================================== */
@@ -1001,7 +1031,8 @@ section.blockquote {
 
 section .square {
   padding: 7.35rem 0;
-  max-width: 17.647rem; }
+  max-width: 17.647rem;
+  text-align-last: center; }
   @media screen and (max-width: 800px) {
     section .square {
       padding: 1.5rem 0; } }
@@ -1110,16 +1141,20 @@ section h3 {
 /* Terms, Privacy, Careers - Indexed Layout
            ========================================================================== */
 .terms, .privacy, .careers {
-  max-width: 21.55rem; }
-  .terms .row, .privacy .row, .careers .row {
-    border-top: 1px solid #000000;
-    padding: 0.5em 0 1em 0; }
-    .terms .row p, .privacy .row p, .careers .row p {
-      padding-bottom: 1em; }
-    .terms .row .title, .privacy .row .title, .careers .row .title {
-      padding-right: 1.3em; }
-  .terms .job, .privacy .job, .careers .job {
-    text-align: center; }
+  max-width: 24.55rem; }
+
+.terms .row, .privacy .row, .careers .row, .shop .row {
+  padding: 0.5em 0 1em 0; }
+  .terms .row:not(:first-child), .privacy .row:not(:first-child), .careers .row:not(:first-child), .shop .row:not(:first-child) {
+    border-top: 1px solid #000000; }
+  .terms .row p, .privacy .row p, .careers .row p, .shop .row p {
+    padding-bottom: 1em; }
+  .terms .row .title, .privacy .row .title, .careers .row .title, .shop .row .title {
+    padding-right: 1.3em; }
+
+@media screen and (max-width: 600px) {
+  .terms .job, .privacy .job, .careers .job, .shop .job {
+    text-align: center; } }
 
 /* Animations
            ========================================================================== */
