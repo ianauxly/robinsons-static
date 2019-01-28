@@ -556,10 +556,14 @@ h3 {
     h3 {
       font-size: 0.520rem; } }
 
-p {
+p,
+select,
+.btn {
   font-size: 0.412rem; }
   @media screen and (max-width: 600px) {
-    p {
+    p,
+    select,
+    .btn {
       font-size: 0.520rem; } }
 
 nav li {
@@ -667,7 +671,7 @@ main {
       padding: 1em 0; } }
 
 #intro .row {
-  max-width: 733px; }
+  max-width: 900px; }
 
 #intro h3 {
   padding-bottom: 2em; }
@@ -1168,7 +1172,7 @@ section h3 {
 
 /* Terms, Privacy, Careers - Indexed Layout
            ========================================================================== */
-.terms, .privacy, .careers {
+.terms, .privacy, .careers, .age-gate {
   max-width: 24.55rem; }
 
 .terms .row, .privacy .row, .careers .row, .shop .row {
@@ -1183,6 +1187,64 @@ section h3 {
 @media screen and (max-width: 600px) {
   .terms .job, .privacy .job, .careers .job, .shop .job {
     text-align: center; } }
+
+/* Age Gate
+          ========================================================================== */
+select {
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 2em;
+  border: 1px solid; }
+  select.black {
+    border-color: #ffffff; }
+    select.black:hover {
+      background: #ffffff;
+      color: #000000; }
+
+.btn {
+  border-radius: 0;
+  border: 1px solid;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 1em;
+  margin-bottom: 2em; }
+  .btn.black {
+    border-color: #ffffff; }
+    .btn.black:hover {
+      background: #ffffff;
+      color: #000000; }
+
+#age-gate-wrap {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999999;
+  background-color: #000000;
+  overflow-y: auto;
+  color: #ffffff;
+  position: relative; }
+  #age-gate-wrap * {
+    font-family: 'Garamond Premr Pro'; }
+  #age-gate-wrap .age-gate {
+    max-height: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto; }
+  #age-gate-wrap h1, #age-gate-wrap p {
+    text-align: center; }
+  #age-gate-wrap p {
+    padding-bottom: 3em; }
 
 /* Animations
            ========================================================================== */

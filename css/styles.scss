@@ -639,7 +639,9 @@
         font-size: 0.520rem;
       }
      }
-     p {
+     p,
+     select,
+     .btn {
        font-size: 0.412rem;
        @media screen and (max-width: 600px) {
          font-size: 0.520rem;
@@ -773,7 +775,7 @@
           }
         }
         .row {
-          max-width: 733px;
+          max-width: 900px;
         }
         h3 {
           padding-bottom: 2em;
@@ -1306,7 +1308,7 @@
             max-width: 17.647rem;
             text-align-last: center;
             text-align: justify;
-            -moz-text-align-last: center; 
+            -moz-text-align-last: center;
             @media screen and (max-width: 800px) {
               padding: 1.5rem 0;
             }
@@ -1455,7 +1457,7 @@
         /* Terms, Privacy, Careers - Indexed Layout
            ========================================================================== */
 
-          .terms, .privacy, .careers {
+          .terms, .privacy, .careers, .age-gate {
             max-width: 24.55rem;
           }
            .terms, .privacy, .careers, .shop {
@@ -1479,6 +1481,80 @@
               }
             }
            }
+
+       /* Age Gate
+          ========================================================================== */
+          select {
+            border-radius: 0;
+            text-transform: uppercase;
+            padding: 1em;
+            text-align: center;
+            margin-bottom: 2em;
+            border: 1px solid;
+
+            &.black {
+              border-color: #ffffff;
+
+              &:hover {
+                background: #ffffff;
+                color: #000000;
+              }
+            }
+          }
+        .btn {
+          border-radius: 0;
+          border: 1px solid;
+          width: 100%;
+          text-transform: uppercase;
+          padding: 1em;
+          margin-bottom: 2em;
+
+          &.black {
+            border-color: #ffffff;
+
+            &:hover {
+              background: #ffffff;
+              color: #000000;
+            }
+          }
+        }
+        #age-gate-wrap {
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 9999999;
+          background-color: #000000;
+          overflow-y: auto;
+          color: #ffffff;
+          position: relative;
+
+          * {
+            font-family: 'Garamond Premr Pro';
+          }
+
+          .age-gate {
+            max-height: 300px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+          }
+          h1, p {
+            text-align: center;
+          }
+          p {
+            padding-bottom: 3em;
+          }
+
+        }
 
 
         /* Animations
