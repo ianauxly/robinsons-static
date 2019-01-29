@@ -1172,7 +1172,7 @@ section h3 {
 
 /* Terms, Privacy, Careers - Indexed Layout
            ========================================================================== */
-.terms, .privacy, .careers, .age-gate {
+.terms, .privacy, .careers {
   max-width: 24.55rem; }
 
 .terms .row, .privacy .row, .careers .row, .shop .row {
@@ -1196,7 +1196,14 @@ select {
   padding: 1em;
   text-align: center;
   margin-bottom: 2em;
-  border: 1px solid; }
+  border: 1px solid;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  text-align-last: center; }
+  @media screen and (max-width: 600px) {
+    select {
+      margin-bottom: 1em; } }
   select.black {
     border-color: #ffffff; }
     select.black:hover {
@@ -1209,7 +1216,11 @@ select {
   width: 100%;
   text-transform: uppercase;
   padding: 1em;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  cursor: pointer; }
+  @media screen and (max-width: 600px) {
+    .btn {
+      margin-bottom: 1em; } }
   .btn.black {
     border-color: #ffffff; }
     .btn.black:hover {
@@ -1229,18 +1240,40 @@ select {
   z-index: 9999999;
   background-color: #000000;
   overflow-y: auto;
-  color: #ffffff;
-  position: relative; }
+  color: #ffffff; }
   #age-gate-wrap * {
     font-family: 'Garamond Premr Pro'; }
+  #age-gate-wrap #birthdate {
+    justify-content: space-between; }
+    #age-gate-wrap #birthdate > div:nth-child(1) {
+      padding-right: 9px; }
+    #age-gate-wrap #birthdate > div:nth-child(2) {
+      padding-left: 6px;
+      padding-right: 6px; }
+    #age-gate-wrap #birthdate > div:nth-child(3) {
+      padding-left: 9px; }
+    @media screen and (max-width: 800px) {
+      #age-gate-wrap #birthdate > div {
+        padding-right: 0 !important;
+        padding-left: 0 !important; } }
+    #age-gate-wrap #birthdate #bmonth,
+    #age-gate-wrap #birthdate #bday,
+    #age-gate-wrap #birthdate #byear {
+      font-variant-caps: small-caps;
+      font-variant: small-caps; }
   #age-gate-wrap .age-gate {
-    max-height: 300px;
+    max-height: fit-content;
+    max-width: 435px;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
     margin: auto; }
+    @media screen and (max-width: 600px) {
+      #age-gate-wrap .age-gate {
+        max-height: fit-content;
+        max-width: 300px; } }
   #age-gate-wrap h1, #age-gate-wrap p {
     text-align: center; }
   #age-gate-wrap p {
